@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>INNER BASIC TURKI — Soft Rose • Modest Elegance</title>
+<meta name="description" content="Inner Basic Turki — jersey premium, adem & nyaman, style turki rapi untuk semua hijab. Promo isi 3 pcs!"/>
+<style>
+  /* Mobile-full layout: max width 430px, Soft Rose theme */
+  :root{
+    --page-bg:#fbf5f6;
+    --card:#fff9fa;
+    --soft:#f7e6e8;
+    --muted:#7a6066;
+    --accent:#f2d6d9;
+    --line:rgba(122,96,102,0.08);
+    --shadow:0 10px 30px rgba(118,78,84,0.06);
+    --radius:14px;
+    --brand:#b23b4a; /* accent color for prices/buttons */
+    --maxw:430px;
+  }
+  html,body{height:100%;margin:0;padding:0;background:var(--page-bg);font-family:"Calibri", "Trebuchet MS", Arial, sans-serif;color:#3b2f30;-webkit-text-size-adjust:100%;}
+  .shell{max-width:var(--maxw);margin:0 auto;background:transparent;padding:12px;box-sizing:border-box;}
+  .card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);}
+  img.block{display:block;width:100%;height:auto;object-fit:cover;}
+  /* Header image (1) */
+  .hero{background:linear-gradient(180deg,var(--soft),transparent);padding:0;margin:0;}
+  .hero img{width:100%;height:auto;display:block;border-radius:12px 12px 0 0;}
+  /* Meta (2) */
+  .meta{padding:14px;text-align:center;}
+  .title{font-size:20px;font-weight:800;margin:0;color:#3a2326;letter-spacing:0.2px;}
+  .tag{font-size:13px;color:var(--muted);margin-top:6px;}
+  .lead{font-size:14px;color:#4b3437;margin-top:10px;line-height:1.45;}
+  /* Details (3) */
+  .details{padding:12px;border-top:1px solid var(--line);}
+  .d-row{display:flex;gap:10px;align-items:flex-start;margin:8px 0;}
+  .dot{min-width:36px;height:36px;border-radius:10px;background:linear-gradient(180deg,var(--accent),var(--soft));display:flex;align-items:center;justify-content:center;font-weight:800;color:#6b3a3d;}
+  .d-text{flex:1;font-size:14px;color:#3b2f30;}
+  .d-sub{font-size:13px;color:var(--muted);margin-top:3px;}
+  /* Gallery (4) */
+  .gallery{padding:12px;border-top:1px solid var(--line);}
+  .gallery figure{margin:0 0 12px;}
+  .gallery figcaption{font-size:13px;color:var(--muted);margin-top:8px;text-align:left;}
+  .gallery img{border-radius:12px;width:100%;height:auto;display:block;}
+  /* Variants (5): horizontal scroll */
+  .variants{padding:12px;border-top:1px solid var(--line);}
+  .variants h4{margin:0 0 10px;font-size:15px;font-weight:800;color:#3a2326;}
+  .v-list{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;}
+  .v-item{flex:0 0 110px;background:linear-gradient(180deg,#fff,#fff9fa);border-radius:12px;padding:8px;border:1px solid var(--line);box-sizing:border-box;}
+  .v-item img{width:100%;height:auto;border-radius:8px;display:block;}
+  .v-caption{font-size:12px;color:var(--muted);text-align:center;margin-top:8px;}
+  /* Testimoni (6) */
+  .testi{padding:12px;border-top:1px solid var(--line);}
+  .testi h4{margin:0 0 8px;font-size:15px;font-weight:800;color:#3a2326;}
+  .t-card{background:linear-gradient(180deg,#fff,#fff7f6);padding:10px;border-radius:10px;margin-bottom:10px;border:1px solid var(--line);}
+  .t-name{font-weight:800;color:#3a2326;font-size:13px;}
+  .t-text{font-size:14px;color:#4b3437;margin-top:6px;}
+  /* Promo + price + countdown (7 & 9 combined) */
+  .promo{padding:12px;border-top:1px solid var(--line);}
+  .promo-box{background:linear-gradient(90deg,#fde9ea,#fff4f6);padding:12px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);}
+  .p-left{font-size:13px;color:#6b3b3f;font-weight:800;}
+  .p-price{font-size:20px;font-weight:900;color:var(--brand);margin-top:6px;}
+  .p-old{font-size:13px;color:var(--muted);text-decoration:line-through;margin-top:6px;}
+  .p-save{font-weight:800;color:#6a3b3f;font-size:13px;margin-top:6px;}
+  .p-right{text-align:right;}
+  .count{background:#fff;padding:8px 10px;border-radius:10px;box-shadow:0 6px 16px rgba(121,84,84,0.05);font-weight:800;color:var(--brand);font-size:14px;}
+  /* Notes (8) */
+  .notes{padding:12px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);}
+  .notes ul{padding-left:18px;margin:8px 0 0;}
+  /* Order visual (10) */
+  .order-visual{padding:12px;border-top:1px solid var(--line);}
+  .img-wrap{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line);}
+  .sticker{position:absolute;left:12px;top:12px;background:linear-gradient(180deg,#ffdedd,#ffb6bf);padding:8px 10px;border-radius:10px;font-weight:900;color:#6a2630;box-shadow:0 8px 20px rgba(106,38,48,0.12);font-size:13px;transform:rotate(-6deg);}
+  .sticker small{display:block;font-size:11px;font-weight:700;color:#5b2a2e;}
+  /* Form (11) */
+  .form-area{padding:12px;border-top:1px solid var(--line);background:linear-gradient(180deg,#fff,#fff);}
+  .form-title{font-weight:900;font-size:15px;color:#3a2326;margin:0 0 8px;}
+  .form-note{font-size:13px;color:var(--muted);margin-bottom:10px;}
+  .ooef{background:linear-gradient(180deg,#fff,#fff);padding:8px;border-radius:10px;border:1px solid var(--line);}
+  /* Footer */
+  .foot{padding:12px;text-align:center;font-size:12px;color:var(--muted);}
+  /* utilities */
+  .sp8{height:8px}
+  .sp12{height:12px}
+  /* hide scrollbar for horizontal gallery (touch-friendly) */
+  .v-list::-webkit-scrollbar{height:8px}
+  .v-list::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.08);border-radius:8px}
+  @media (min-width:440px){ .shell{padding:18px 22px;} }
+</style>
+</head>
+<body>
+  <div class="shell" role="document" aria-label="Landing page mobile Inner Basic Turki">
+
+    <main class="card" role="main" aria-labelledby="title">
+      <!-- 1. Gambar Utama -->
+      <header class="hero" aria-hidden="false">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0j-mbvyidv7pwh95f.webp" alt="Inner Basic Turki - gambar utama" class="block">
+      </header>
+
+      <!-- 2. Judul & Deskripsi -->
+      <section class="meta" id="meta">
+        <h1 id="title" class="title">INNER BASIC TURKI</h1>
+        <div class="tag">Tampil rapi dan nyaman seharian dengan Inner Basic Turki, inner hijab favorit para hijabers! 🌸</div>
+        <p class="lead">Terbuat dari bahan jersey premium yang super lembut, adem, dan elastis — memberikan kenyamanan maksimal tanpa membuat kepala terasa pengap. Desain Turki style dengan potongan pas di wajah membuat hijab lebih rapi dan mudah diatur. Cocok untuk semua jenis hijab: pashmina, segi empat, hingga hijab instan.</p>
+      </section>
+
+      <!-- 3. Detail & Keunggulan -->
+      <section class="details" aria-labelledby="detail">
+        <h2 id="detail" style="margin:0 0 8px;font-size:15px;font-weight:900;color:#3a2326;">Detail & Keunggulan</h2>
+        <div class="d-row"><div class="dot">🧵</div><div class="d-text"><strong>Bahan Jersey Premium</strong><div class="d-sub">Adem, lentur, dan tidak bikin gerah</div></div></div>
+        <div class="d-row"><div class="dot">🧕</div><div class="d-text"><strong>Model Turki</strong><div class="d-sub">Menutup sempurna dan rapi di area wajah</div></div></div>
+        <div class="d-row"><div class="dot">💫</div><div class="d-text"><strong>Elastis & Nyaman</strong><div class="d-sub">Cocok dipakai seharian</div></div></div>
+        <div class="d-row"><div class="dot">🌸</div><div class="d-text"><strong>Multi-Gaya</strong><div class="d-sub">Cocok untuk semua gaya hijab</div></div></div>
+      </section>
+
+      <!-- 4. Gallery detail -->
+      <section class="gallery" aria-labelledby="gallery">
+        <h3 id="gallery" style="margin:0 0 10px;font-size:15px;font-weight:900;color:#3a2326;">Foto Detail Produk</h3>
+
+        <figure>
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0g-mbvyidv7ohwt7a.webp" alt="Detail inner - tampak depan" class="block">
+          <figcaption>Tampak depan: potongan rapi mengikuti wajah.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://i.pinimg.com/1200x/c8/f7/d6/c8f7d6371f36d81881e597d299b39343.jpg" alt="Styling inner dengan hijab" class="block">
+          <figcaption>Contoh padu padan & styling hijab yang rapi.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://id-live-01.slatic.net/p/2736e91ebf18a5d04c618eaae2380890.jpg" alt="Close up bahan" class="block">
+          <figcaption>Close-up bahan jersey — lembut dan halus.</figcaption>
+        </figure>
+      </section>
+
+      <!-- 5. Variants (gambar asli; keterangan di bawah tiap gambar) -->
+      <section class="variants" aria-labelledby="variants">
+        <h4 id="variants">Pilihan Warna</h4>
+        <div class="v-list" role="list" aria-label="varian warna">
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk6-mamijigq7tg9f2.webp" alt=""><div class="v-caption">Coksu</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk3-mamijigq980p66.webp" alt=""><div class="v-caption">Hitam</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk8-mamijigqaml585.webp" alt=""><div class="v-caption">Khaki</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk7-mamijigqc15le9.webp" alt=""><div class="v-caption">Mocca</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk2-mamijigqdfq152.webp" alt=""><div class="v-caption">Navy</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk8-mamijigqeuaha0.webp" alt=""><div class="v-caption">Putih</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbkb-mamijigqg8ux7c.webp" alt=""><div class="v-caption">Silver</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk7-mamijigqhnfd6c.webp" alt=""><div class="v-caption">Abu Tua</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk5-mamijigqj1zt3b.webp" alt=""><div class="v-caption">Maroon</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbke-mamijigq6evt9a.webp" alt=""><div class="v-caption">Dusty Pink</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk0-mamim1vgdezo76.webp" alt=""><div class="v-caption">Frapuchino</div></div>
+          <div class="v-item" role="listitem"><img src="https://down-id.img.susercontent.com/file/id-11134207-81ztn-metme6ju8jr81a.webp" alt=""><div class="v-caption">Denim</div></div>
+        </div>
+      </section>
+
+      <!-- 6. Testimoni -->
+      <section class="testi" aria-labelledby="testis">
+        <h4 id="testis">Testimoni Pelanggan</h4>
+
+        <div class="t-card" role="article" aria-label="testi 1">
+          <div class="t-name">Maya — Bekasi</div>
+          <div class="t-text">"Sangat nyaman! Bahannya adem, pas dipakai seharian nggak bikin gerah. Potongannya bikin hijab rapi tanpa harus banyak peniti."</div>
+        </div>
+
+        <div class="t-card" role="article" aria-label="testi 2">
+          <div class="t-name">Fitri — Bandung</div>
+          <div class="t-text">"Worth it. Aku order isi 3, warnanya sesuai, jahitannya rapi. Cocok untuk kerja atau jalan santai."</div>
+        </div>
+
+        <div class="t-card" role="article" aria-label="testi 3">
+          <div class="t-name">Nur — Jakarta</div>
+          <div class="t-text">"Praktis & nyaman. Anak saya juga suka pakai. Recommend untuk yang suka turki style."</div>
+        </div>
+      </section>
+
+      <!-- 7 & 9. Promo & Harga (satu layout) -->
+      <section class="promo" aria-labelledby="promo">
+        <h4 id="promo" style="margin:0 0 8px;font-weight:900;color:#3a2326;">PROMO SPESIAL HARI INI</h4>
+        <div class="promo-box" role="region" aria-live="polite" aria-atomic="true">
+          <div class="p-left">
+            <div style="font-size:13px;font-weight:800;color:#6b3b3f;">PROMO ISI 3 PCS</div>
+            <div class="p-price">Rp 139.000</div>
+            <div class="p-old">Harga Normal Rp 199.000</div>
+            <div class="p-save">Anda Hemat Rp 60.000</div>
+          </div>
+          <div class="p-right">
+            <div style="font-size:12px;color:var(--muted);">HARGA AKAN KEMBALI NORMAL SETELAH</div>
+            <div id="countdown" class="count" aria-label="Waktu promo berakhir">--:--:--</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Note pemesanan -->
+      <section class="notes" aria-labelledby="notes">
+        <h4 id="notes" style="margin:0 0 6px;font-weight:900;color:#3a2326;">Note Pemesanan & Pengiriman</h4>
+        <ul>
+          <li>Pengiriman 2 - 4 Hari Setelah Pemesanan</li>
+          <li>Mohon Isi Alamat Dengan Lengkap</li>
+          <li>100% Product Original</li>
+        </ul>
+      </section>
+
+      <!-- 10. Image above form (decorated) -->
+      <section class="order-visual" aria-hidden="false">
+        <div style="padding:12px;">
+          <div class="img-wrap">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-8224s-mfxs1omv553f1c.webp" alt="Gambar sebelum form pemesanan" class="block">
+            <div class="sticker" aria-hidden="true">PROMO ISI 3 <small>Hemat Rp 60.000</small></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. Form embed -->
+      <section class="form-area" aria-labelledby="form">
+        <h4 id="form" class="form-title">Form Pemesanan</h4>
+        <div class="form-note">Isi detail pemesanan. Jika embed tidak muncul segera, tunggu beberapa detik hingga script termuat.</div>
+
+        <!-- OrderOnline Embed Code - v8.0.4 (provided) -->
+        <div class="ooef" aria-live="polite">
+          <form class="orderonline-embed-form" data-username="vita" data-product-slug="inner-basic-turki" data-product-id="69061d0685139808bc0f1171" id="oo-embed-form-inner-basic-turki-8636" data-origin="orderonline">
+            <div class="ooef-loader">
+              <style>.ooef-loader{visibility:hidden;opacity:0;position:absolute;left:0;right:0;top:0;bottom:0;display:flex;justify-content:center;align-items:center;flex-direction:column;animation:ooLoadingIn 10s ease;animation-fill-mode:forwards;overflow:hidden}@keyframes ooLoadingIn{0%{visibility:hidden;opacity:0}20%{visibility:visible;opacity:0}100%{visibility:visible;opacity:1}}.ooef-loader>div{border-radius:50%;width:2.5rem;height:2.5rem;font-size:10px;position:relative;text-indent:-9999em;border:.25rem solid #f5f5f5;border-left:.25rem solid #55c4cf;transform:translateZ(0);animation:ooLoading 1.1s infinite linear}@keyframes ooLoading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style>
+              <div aria-live="polite" role="status"><div>Loading...</div></div>
+            </div>
+          </form>
+        </div>
+
+        <script>
+          if (typeof xLogError != 'function') { var xLogError = function (error) { try{ var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params);}catch(e){} }; }
+          try {
+            if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w,d,e,v,id,t,s){ if (d.getElementById(id)) return; t=d.createElement(e);t.async=!0;t.src=v;t.id=id;s=d.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s); }(window,document,'script','https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4','oo-embed-js'); }; }
+            if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w,n) { if (w.ooe) return; n = w.ooe = function(){ n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n; n.loaded = !0; n.version='8.0.4'; n.queue=[]; }; }
+            xEmbedInit(window);
+            ooe('setup','redirect','https://vita.orderonline.id');
+            ooe('init','5f1a8627a9bf8058b0424f32','69061d0685139808bc0f1171','69061d0685139808bc0f1172','oo-embed-form-inner-basic-turki-8636',{"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
+            if (!window.jQuery) { !function(w,d,e,v,id,t,s){ if (d.getElementById(id)) return; t=d.createElement(e);t.async=!0;t.src=v;t.id=id; t.addEventListener('load', xEmbedScript); s=d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s); }(window,document,'script','https://cdn.orderonline.id/js/vendor/jquery.min.js','oo-embed-jquery'); } else { xEmbedScript(); }
+          } catch (e) { xLogError(e); throw e; }
+        </script>
+
+      </section>
+
+      <div class="sp12"></div>
+    </main>
+
+    <footer class="foot">© <span id="yr"></span> Vita — Semua hak dilindungi.</footer>
+  </div>
+
+  <!-- Countdown script (promo ends today 23:59:59 local) -->
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    (function(){
+      var el = document.getElementById('countdown');
+      function pad(n){ return n<10 ? '0'+n : n; }
+      function tick(){
+        var now = new Date();
+        var end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23,59,59);
+        var diff = end - now;
+        if(diff <= 0){ el.textContent = '00:00:00'; return; }
+        var s = Math.floor(diff/1000);
+        var h = Math.floor(s/3600); s -= h*3600;
+        var m = Math.floor(s/60); s -= m*60;
+        el.textContent = pad(h)+':'+pad(m)+':'+pad(s);
+      }
+      tick();
+      setInterval(tick,1000);
+    })();
+  </script>
+</body>
+</html>
